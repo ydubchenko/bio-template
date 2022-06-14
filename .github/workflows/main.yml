@@ -1,0 +1,16 @@
+name: Test worflow
+
+on: [push]
+
+jobs:
+  checkout:
+    runs-on: ubuntu-latest
+    steps:
+      -name: checkout
+       uses: actions/checkout@V2
+      -name: zip
+       uses: actions/upload-artifact@v3
+       with:
+        name: source
+        path: .
+      
