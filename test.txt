@@ -1,1 +1,3 @@
 Hello ${FirstName}!
+
+${{ env.MY_VARIABLE }}
