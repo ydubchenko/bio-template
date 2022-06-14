@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: BIO YUD API
+  description: The YUD API
+  tags:
+    - yud
+    - demo
+spec:
+  type: openapi
+  lifecycle: dev
+  owner: group:default/grp_-_platform_experience_team
+  definition: 
+    $text: https://platform-inventory-dev.sitecore-staging.cloud/swagger/v1/swagger.json
