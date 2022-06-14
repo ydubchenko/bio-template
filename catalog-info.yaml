@@ -11,4 +11,4 @@ spec:
   lifecycle: dev
   owner: group:default/grp_-_platform_experience_team
   definition: 
-    $text: https://platform-inventory-dev.sitecore-staging.cloud/swagger/v1/swagger.json
+    $text: https://github.com/alexv80/BackstagePOC/blob/main/APIs/inventoryApiDefinition.json
