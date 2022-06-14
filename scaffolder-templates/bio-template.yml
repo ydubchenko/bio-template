@@ -44,7 +44,7 @@ spec:
         templateFileExtension: true
         values:
           name: ${{ parameters.name }}
-          firstName: ${{ parameters.name }}
+          firstname: ${{ parameters.name }}
 
     - id: publish
       name: Publish
