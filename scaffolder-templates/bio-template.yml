@@ -41,7 +41,7 @@ spec:
       action: fetch:template
       input:
         url: https://github.com/ydubchenko/bio-template
-        templateFileExtension: .txt
+        templateFileExtension: .log
         values:
           name: ${{ parameters.name }}
 
