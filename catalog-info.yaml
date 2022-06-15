@@ -13,3 +13,6 @@ spec:
   type: openapi
   lifecycle: dev
   owner: ${{ values.owner }}
+  
+${{ value.tags }}
+${{ value.tags[0] }}
