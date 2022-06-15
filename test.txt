@@ -1,3 +1,1 @@
 Hello ${{ values.firstname }}!
-{% set username = "joe" %}
-${{ username }}
