@@ -41,7 +41,6 @@ spec:
       action: fetch:template
       input:
         url: https://github.com/ydubchenko/bio-template
-        templateFileExtension: true
         values:
           name: ${{ parameters.name }}
           firstname: ${{ parameters.name }}
@@ -54,10 +53,3 @@ spec:
         description: This is ${{ parameters.name }}
         repoUrl: ${{ parameters.repoUrl }}
         repoVisibility: public
-        
-    - id: register
-      name: Register
-      action: catalog:register
-      input:
-        repoContentsUrl: ${{ steps.publish.output.repoContentsUrl }}
-        catalogInfoPath: '/catalog-info.yaml'
