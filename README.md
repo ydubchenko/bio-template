@@ -1,5 +1,5 @@
-# bio-template
+# ${{ values.name }}
 
-![example workflow](https://github.com/ydubchenko/bio-template/actions/workflows/main.yml/badge.svg)
+![example workflow](${{ values.repoUrl }}/actions/workflows/main.yml/badge.svg)
 
-Backstage.io template repository
+${{ values.description }}
