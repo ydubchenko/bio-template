@@ -14,6 +14,8 @@ spec:
     - title: Fill in some steps
       required:
         - name
+        - description
+        - owner
       properties:
         name:
           title: Name
@@ -22,6 +24,26 @@ spec:
           ui:autofocus: true
           ui:options:
             rows: 5
+        description:
+          title: Description
+          type: string
+          description: Description of the component
+          ui:options:
+            rows: 5
+        tags:
+          title: Tags
+          type: string
+          description: Tags of the component
+          ui:options:
+            rows: 5
+        owner:
+          title: Owner
+          type: string
+          description: Owner of the component
+          ui:field: OwnerPicker
+          ui:options:
+            allowedKinds:
+              - Group
     - title: Choose a location
       required:
         - repoUrl
@@ -44,6 +66,10 @@ spec:
         values:
           name: ${{ parameters.name }}
           firstname: ${{ parameters.name }}
+          description: ${{ parameters.description }}
+          owner: ${{ parameters.owner }}
+          repoUrl: ${{ parameters.repoUrl }}
+          tags: ${{ parameters.tags }}
 
     - id: publish
       name: Publish
