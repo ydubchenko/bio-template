@@ -5,10 +5,9 @@ metadata:
   description: ${{ values.description }}
 {%- if values.tags %}
   tags:
-{%- for tag in values.tags -%}
+{%- for tag in values.tags %}
     - ${{ tag }}
 {%- endfor %}
-
 {%- endif %}
 spec:
   type: openapi
