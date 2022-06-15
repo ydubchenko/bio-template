@@ -3,7 +3,7 @@ kind: Template
 # some metadata about the template itself
 metadata:
   name: bio-template
-  title: Backstage.io YUD tempalte
+  title: Backstage.io YUD template
   description: Simple component with GitHub actions
 spec:
   owner: backstage/techdocs-core
