@@ -3,12 +3,13 @@ kind: API
 metadata:
   name: ${{ values.name }}
   description: ${{ values.description }}
-{% if values.tags -%}
+{%- if values.tags %}
   tags:
-{% for tag in values.tags -%}
+{%- for tag in values.tags -%}
     - ${{ tag }}
 {%- endfor %}
-{%- endif -%}
+
+{%- endif %}
 spec:
   type: openapi
   lifecycle: dev
