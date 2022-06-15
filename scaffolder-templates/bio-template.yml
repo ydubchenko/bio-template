@@ -69,8 +69,7 @@ spec:
           firstname: ${{ parameters.name }}
           description: ${{ parameters.description }}
           owner: ${{ parameters.owner }}
-          repoOwner: ${{ parameters.repoUrl.owner }}
-          repoName: ${{ parameters.repoUrl.repo }}
+          repoDestination: ${{ parameters.repoUrl | parseRepoUrl }}
           tags: ${{ parameters.tags }}
 
     - id: publish
