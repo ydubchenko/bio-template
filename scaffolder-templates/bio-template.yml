@@ -32,10 +32,11 @@ spec:
             rows: 5
         tags:
           title: Tags
-          type: string
-          description: Tags of the component
+          type: array
+          items:
+            type: string
           ui:options:
-            rows: 5
+            orderable: false
         owner:
           title: Owner
           type: string
