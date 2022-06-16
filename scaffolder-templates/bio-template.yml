@@ -65,7 +65,6 @@ spec:
       input:
         url: https://github.com/ydubchenko/bio-template
         copyWithoutRender:
-          - .github/workflows/*
           - scaffolder-templates/*
         values:
           name: ${{ parameters.name }}
