@@ -16,7 +16,7 @@ jobs:
           name: artifact
           path: .
       - name: "Say Hello Mona it's Monday"
-        if: {%- raw %}${{ env.DAY_OF_WEEK == 'Monday' }}{% endraw %}
+        if: {% raw %}${{ env.DAY_OF_WEEK == 'Monday' }}{% endraw %}
         run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
         env:
           First_Name: Mona
